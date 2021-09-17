@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,OAAOC,iBAAgB,QAAO,SAAWC,GACrCC,SAASC,KAAKC,MAAMC,gBAAe","sources":["src/js/index.js"],"sourcesContent":["window.addEventListener('load', function(e){\n    document.body.style.backgroundColor = \"blue\"\n})"],"names":["window","addEventListener","e","document","body","style","backgroundColor"],"version":3,"file":"index.5c90d6bb.js.map"}

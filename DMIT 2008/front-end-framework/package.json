@@ -1,20 +1,16 @@
 {
-  "name": "workflow",
+  "name": "dmit2008esm",
   "version": "1.0.0",
-  "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
-  "directories": {
-    "doc": "docs"
-  },
-  "default": "src/index.html",
+  "description": "basic starter framework for using ES modules in the browser",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "James Foley",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "http-server": "^13.0.2",
+    "http-serve": "^1.0.1",
     "parcel": "^2.0.0-rc.0",
-    "sass": "^1.40.1"
+    "sass": "^1.39.2"
   }
 }
