@@ -1,15 +1,8 @@
-// Modules are in strict mode....
+const makeElement = function (templateString = ``){
+    const docFrag = document.createRange().createContextualFragment(templateString);
+    const element = docFrag.children[0];
 
-// Module Scope
- 
-const makeElement = function (templateString=``){
-    const docFragment = document.createRange().createContextualFragment(templateString)
-    const element = docFragment.children[0]
-    return element 
+    return element;
 }
 
 export default makeElement
-
- 
-
- 
