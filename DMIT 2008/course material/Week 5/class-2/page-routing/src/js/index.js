@@ -1,7 +1,4 @@
-const homePage = function (){
+import homePage from './pages/homePage';
+import Router from './routes/router'
 
-   const pageHeader = document.createElement('header')
-     
-}
-
-export default homePage
+const app = document.querySelector('#app');
