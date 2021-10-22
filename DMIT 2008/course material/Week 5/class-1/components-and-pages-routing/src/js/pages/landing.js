@@ -3,7 +3,7 @@ import header from './../components/header';
 import button from './../components/button/button'
 import makeElement from '../utils/makeElement';
 
-const landingPage = function (params){
+const landing = function (params){
 
     const pageHeader = document.createElement('header');
     pageHeader.classList.add('page-header');
@@ -14,4 +14,4 @@ const landingPage = function (params){
     return pageHeader;
 }
 
-export default landingPage
+export default landing

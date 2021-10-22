@@ -1,4 +1,3 @@
-import landingPage from './pages/landing.js';
 import landing from './pages/landing.js';
 
 const app = document.querySelector('#app');
