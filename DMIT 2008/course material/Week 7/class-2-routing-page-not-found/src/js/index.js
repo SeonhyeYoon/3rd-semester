@@ -5,6 +5,8 @@ import keyGenerator from './utils/key'
 
 
 const app = document.querySelector("#app");
+// passes the pathname to the router
+// / home
 Router(window.location.pathname)
 
 

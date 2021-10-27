@@ -1,7 +1,10 @@
 .directory{
-   width: 100%;
+  width: 100%;
+   border:1px solid black;
    max-width: 580px;
-  padding: 3rem 1rem 0;
+   height: 720px;
+   overflow: auto;
+    padding: 3rem 1rem 0;
     header{
       text-align: center;
     }
@@ -11,23 +14,23 @@
     }
 }
 
-.employees{
+// .employees{
  
    
-}
+// }
 .employee{
   padding: 1rem;
   box-shadow: 0 0 2px 1px rgb(245, 245, 245);
   margin-bottom: 1.3rem;
-  p{
-    font-size: 14px;
-  }
-  p
-  }
-  p:nth-child(2){
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
+  // p{
+  //   font-size: 14px;
+  // }
+  // p
+  // }
+  // p:nth-child(2){
+  //   font-size: 1.25rem;
+  //   font-weight: bold;
+  // }
 
 }
 

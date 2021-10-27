@@ -1,5 +1,7 @@
 
-import directory from "../pages/directory"; 
+import home from "../pages/index"; 
+import directory from "../pages/directory";
+import notFound from "../pages/notFound";
 
 
 /* 
@@ -10,14 +12,13 @@ import directory from "../pages/directory";
 */
 
 const routes = {
-    "/": directory,
+    "/": home,
+    "/directory":directory
 }
 
-const Router =  function (pathname)   {
-   
-     // check the pathname agains the router object
-     // if path is valid display the component page
-     // if not display the not found page.
+const Router =  function (pathname){
+
+    const isValidRoute = Object.keys(routes).find(key => key===pathname);
    
     // loading and unloading pages into the div app
     const app = document.querySelector('#app')
@@ -27,16 +28,15 @@ const Router =  function (pathname)   {
         {},
         pathname,
         window.location.origin + pathname
-    )
-    
+    )    
        
-        app.appendChild(routes[window.location.pathname]())
-       
-    
-
+    // app.appendChild(routes[window.location.pathname]())
+    if(isValidRoute === undefined){
+        app.appendChild(notFound())
+    }else{
+        app.appendChild(routes[isValidRoute]()) 
+    }
 }
-
-
 
  
 export { Router}
