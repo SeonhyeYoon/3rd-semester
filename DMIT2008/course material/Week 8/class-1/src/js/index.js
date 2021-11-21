@@ -3,7 +3,6 @@ import { createStore} from "./redux/store";
 import { dataFetcher } from "./utils/dataFetcher";
 import keyGenerator from './utils/key'
 
-
 const app = document.querySelector("#app");
 Router(window.location.pathname)
 

@@ -14,12 +14,12 @@ import notFound from "../pages/notFound";
 
 const routes = {
     "/": home,
-    "/directory":directory,
-    "/delete":deletePage
+    "/directory": directory,
+    "/delete": deletePage
 }
 
-const Router =  function (pathname, params)   {
-
+//params that is page data......
+const Router =  function (pathname, params=null)   {
    const isValidRoute =   Object.keys(routes).find(key => key===pathname)
     
    
@@ -42,9 +42,6 @@ const Router =  function (pathname, params)   {
         }else{
             app.appendChild(routes[isValidRoute](params)) 
         }
-       
-    
-
 }
 
 

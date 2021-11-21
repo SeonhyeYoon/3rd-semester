@@ -7,7 +7,10 @@ const employee = function ({id,name,department,phone,email}) {
      <p> ${name} </p>
      <p>email: ${email}</p>
      <p>phone: ${phone}</p> 
-     <p class="controls"><button>edit</button><button>delete</button></p>      
+     <p class="controls">
+      <button id="editEmployee">edit</button>
+      <button id="deleteEmployee">delete</button>
+     </p>      
   </li>        
   `;
   return makeElement(template)

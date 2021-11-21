@@ -1,26 +1,18 @@
-
 import home from "../pages/index"; 
 import directory from "../pages/directory";
+import deletePage from "../pages/delete/deletePage";
 import notFound from "../pages/notFound";
 
-
-/* 
-     Route is a path to something .....file or function
-     key value
-     route   page.js ()
-     pathname is one of the routes you set up.....
-*/
-
+// Routing Table
 const routes = {
     "/": home,
-    "/directory":directory
+    "/directory": directory,
+    "/delete": deletePage
 }
 
-const Router =  function (pathname)   {
-
-   const isValidRoute =   Object.keys(routes).find(key => key===pathname)
-    
-   
+// Passing Data Add prarm
+const Router =  function (pathname, params=null)   {
+    const isValidRoute =   Object.keys(routes).find(key => key===pathname)
      
    
     // loading and unloading pages into the div app
@@ -38,10 +30,9 @@ const Router =  function (pathname)   {
         if(isValidRoute === undefined){
             app.appendChild(notFound())
         }else{
-            app.appendChild(routes[isValidRoute]()) 
-        }
-       
-    
+            // passing properties through to the page component as params
+            app.appendChild(routes[isValidRoute]( params)) 
+        }   
 
 }
 
