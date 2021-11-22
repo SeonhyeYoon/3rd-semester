@@ -1,4 +1,3 @@
-
 import home from "../pages/index"; 
 import directory from "../pages/directory";
 import deletePage from "../pages/delete/";

@@ -10,7 +10,6 @@ const deleteButton = button("delete")
 //Grabbing Page Props data for the page
 // employee id
 const deletePage = function(props){
-
     const page = document.createElement('div') 
 
     // CANCEL DELETE EVENT HANDLER
@@ -35,7 +34,6 @@ const deletePage = function(props){
         const index = getStore().findIndex((employee)=>{
             return(employee.id === props.id)
         });
-
         const action = {
             type:"delete",
             payload:{index},

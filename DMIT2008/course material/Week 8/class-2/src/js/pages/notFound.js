@@ -8,7 +8,7 @@ const notFound = function(){
         <h1><span>404</span> <span>page not found</span></h1>
         </header>
     `
-    const pageHeader = makeElement(headerTemplate)
+    const pageHeader = makeElement(headerTemplate);
     const homeLink = link("employee directory", "/directory")
 
     pageHeader.append(homeLink)

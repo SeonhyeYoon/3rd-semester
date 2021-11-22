@@ -1,4 +1,5 @@
 import makeElement from './../../utils/makeElement'
+
 const directory = function (){
     const template = `
     <aside id="directory" class="directory">
