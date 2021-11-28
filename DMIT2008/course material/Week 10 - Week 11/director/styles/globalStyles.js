@@ -1,8 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
- 
- *,
+*,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
@@ -348,11 +347,10 @@ table th {
   text-align: left;
 }
 
-
- 
-body{
- background-color: #fafafa;
+body {
+  background-color: #fafafa;
 }
 `
+
 
 export default GlobalStyles
